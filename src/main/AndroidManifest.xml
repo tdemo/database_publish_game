@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.sdu.online.findteam">
+
+    <!-- SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 向SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    手机振动权限
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".share.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="lwp.extension" android:value="com.alibaba.wukong.auth.AuthExtension"/>
+        <!-- 每个App需要配置各自的AppKey-->
+        <!--<meta-data android:name="wk.appKey" android:value="a28240bf426b05c05db7cfe785155a78"/>-->
+        <meta-data android:name="wk.appKey" android:value="4c345eb5118322135d834a16fa35c74e"/>
+
+        <!-- 配置长链接服务 -->
+        <service
+            android:name="com.laiwang.protocol.android.LWPService" android:exported="false" >
+        </service>
+        <!-- 配置工具 -->
+        <meta-data
+            android:name="AUDIOCACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="IMAGECACHE:com.alibaba.doraemon.impl.cache.CacheFetcher"
+            android:value="" />
+        <meta-data
+            android:name="IMAGE:com.alibaba.doraemon.impl.image.ImageMagicianFetcher"
+            android:value="IMAGECACHE;REQUEST;THREAD" />
+        <meta-data
+            android:name="AUDIO:com.alibaba.doraemon.impl.audio.AudioMagicianFetcher"
+            android:value="AUDIOCACHE;REQUEST;THREAD" />
+
+        <activity
+            android:name=".activity.OriginActivity"
+            android:theme="@style/NoActionBar_trans">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/NoActionBar_trans"/>
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/NoActionBar_trans"/>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/trans_style" />
+
+        <activity
+            android:name=".activity.InfoPersonActivity"
+            android:theme="@style/trans_style" />
+
+        <activity
+            android:name=".activity.SingleCompetitionActivity"
+            android:theme="@style/trans_style" />
+
+        <activity
+            android:name=".activity.OtherTeamActivity"
+            android:theme="@style/trans_style" />
+
+        <activity
+            android:name=".activity.TeamLogActivity"
+            android:theme="@style/trans_style"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name=".activity.MySingleTeamActivity"
+            android:theme="@style/trans_style" />
+
+        <activity
+            android:name=".activity.WriteActivity"
+            android:theme="@style/trans_style" />
+
+        <activity
+            android:name=".activity.MyMessageActivity"
+            android:theme="@style/trans_style"
+            android:exported="false"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".activity.ChatActivity"
+            android:theme="@style/trans_style"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity android:name=".activity.StartActivity"
+            android:theme="@style/NoActionBar_trans"/>
+
+        <activity android:name=".activity.ImgShowerActivity"
+            android:theme="@style/NoActionBar_trans"/>
+
+        <activity android:name=".activity.InviteNewMemActivity"
+            android:theme="@style/trans_style"/>
+
+        <activity android:name=".activity.EditTeamSettingActivity"
+            android:theme="@style/trans_style"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+
+        <activity
+            android:name=".aliwukong.imkit.chat.controller.SingleChatActivity"
+            android:theme="@style/trans_style"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".aliwukong.imkit.chat.controller.GroupChatActivity"
+            android:theme="@style/trans_style"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".aliwukong.user.UserProfileActivity"
+            android:theme="@style/trans_style"/>
+        <activity
+            android:name=".aliwukong.user.EditProfileActivity"
+            android:theme="@style/trans_style"/>
+        <activity
+            android:name=".aliwukong.user.UserAvatarActivity"
+            android:theme="@style/trans_style"/>
+        <activity
+            android:name=".aliwukong.imkit.chat.controller.ImageShowerActivity"
+            android:theme="@style/trans_style">
+        </activity>
+        <activity
+            android:name=".aliwukong.imkit.chat.controller.ChatSettingActivity"
+            android:theme="@style/trans_style">
+        </activity>
+
+        <activity android:name=".activity.NewChatActivity"
+            android:theme="@style/trans_style"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity android:name=".activity.MyTeamActivity"
+            android:theme="@style/trans_style"/>
+    </application>
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 接收到的系统消息的显示 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:focusable="true"
+              android:orientation="vertical">
+
+    <!-- 分组用的时间组件 -->
+    <include layout="@layout/chatting_item_split_view" />
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/chatting_item_time_divider_height"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+                  android:id="@id/sysmsg_overlay">
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/chatting_item_divider_bg" />
+
+        <TextView
+                android:id="@id/chatting_sysmsg_tv"
+                style="@style/ChattingUITextBasic"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/chatting_item_divider_bg" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,246 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="ActionBar" parent="android:Widget.ActionBar">
+        <item name="android:background">@color/blue_color</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
+    </style>
+
+    <style name="ActionBar.TitleText" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--没有ActionBar的Activity切换-->
+    <style name="NoActionBar_trans" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/activity_trans</item>
+    </style>
+
+    <!--有ActionBar的Activity切换-->
+    <style name="trans_style" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/activity_trans</item>
+    </style>
+
+    <style name="activity_trans" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_to_right</item>
+    </style>
+
+    <!-- popwidnow 显示消失动画 -->
+    <style name="popwindow_anim">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_show</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/popupwindow_hide</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+   <!-- 相片选取的弹出框属性-->
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+
+    <!--阿里悟空相关-->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light" />
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+<!--    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>-->
+
+    <style name="Theme.Normal" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="ChattingUITextBasic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 发送出去的消息的显示容器的样式定义 -->
+    <style name="ChattingUIToContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="ChattingUIUnreadText">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/unread_tv_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 发送消息未读状态icon -->
+    <style name="ChattingUnReadIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/unread_icon_iv</item>
+    </style>
+
+    <!-- 发送失败内容的显示 -->
+    <style name="ChattingUISendFail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_send_not_success</item>
+    </style>
+
+    <!-- 接收到的信息的显示容器的样式定义 -->
+    <style name="ChattingUIFromContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- left原来的值是8dp -->
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <!-- 接收聊天头像的样式风格定义 -->
+    <style name="ChattingUIFromAvatar">
+        <item name="android:layout_width">@dimen/chatting_item_avatar_width</item>
+        <item name="android:layout_height">@dimen/chatting_item_avatar_height</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/chatting_item_avatar_marginRight</item>
+    </style>
+
+    <!-- 发送聊天头像的样式风格-->
+    <style name="SendChattingUIFromAvatar">
+        <item name="android:layout_width">@dimen/chatting_item_avatar_width</item>
+        <item name="android:layout_height">@dimen/chatting_item_avatar_height</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--输入框样式风格定义-->
+    <style name="edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:drawableRight">@drawable/icon_clear</item>
+        <item name="android:background">@null</item>
+        <item name="android:ems">10</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textColorHint">@color/border</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <!--video call-->
+    <style name="VideoCallNameText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="VideoCallStateText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="VideoCallText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MenuTextAppearance">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TitleTextAppearance">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="Widget.Styled.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/common_navigator</item>
+        <!--<item name="android:backgroundSplit">@drawable/actionbar_bg</item>-->
+        <item name="android:titleTextStyle">@style/TitleTextAppearance</item>
+    </style>
+    <style name="Actionbar_Animation" parent="AppTheme">
+        <item name="android:windowBackground">@color/pure_white</item>
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="android:actionMenuTextColor">@color/text_color_white</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextAppearance</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_selector</item>
+    </style>
+
+    <style name="CheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="LaunchStyle" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

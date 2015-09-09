@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.sdu.online.findteam.view.SingleCompetitionListView
+        android:id="@+id/teammem_log_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"/>
+
+    <Button
+        android:id="@+id/teammem_writelog"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/simplecompetition_button_bg"
+        android:text="写日志"
+        android:textColor="@color/singlecompetiton_buttontext_bg"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:minHeight="150dp"
+    android:background="@color/bg_gray"
+    >
+    <ImageView
+        android:id="@+id/user_profile_left_bg"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/user_profile_avatar_left_grey_bg"
+        />
+    <FrameLayout
+        android:id="@+id/user_profile_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="27dp">
+        <ImageView
+            android:id="@+id/user_profile_avatar_gray_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/user_profile_avatar_gray_bg"
+            />
+        <ImageView
+            android:id="@+id/user_profile_avatar_tv"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:layout_gravity="center"
+            android:background="@drawable/avatar_in_active"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/user_profile_right_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="114dp"
+        android:background="@drawable/user_profile_avatar_right_grey_bg"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/user_profile_name_ll"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/user_profile_avatar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp">
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/user_profile_header_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_white"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:id="@+id/no_active_user_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/no_active_user_label"
+            />
+        <TextView
+            android:id="@+id/in_my_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:text="@string/in_my_local_contact"
+            android:textColor="@color/text_color_gray"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_below="@id/user_profile_name_ll"
+        android:layout_toRightOf="@id/user_profile_avatar"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp">
+
+
+        <ImageView
+            android:id="@+id/user_profile_header_gender"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/male_userprofile"
+            />
+
+        <TextView
+            android:id="@+id/user_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/profile_person_label"
+            android:maxHeight="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/text_color_white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

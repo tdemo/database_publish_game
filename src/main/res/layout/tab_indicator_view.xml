@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/tab_indicator_selector">
+    <TextView
+        android:id="@+id/tv_text"
+        android:textSize="@dimen/text_size_15"
+        android:padding="0dp"
+        android:includeFontPadding="true"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textColor="@drawable/tab_text_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_unread_count"
+        android:textColor="@color/text_color_tab"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_text"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_10"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:background="@drawable/tab_count_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/unread_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_text"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/tab_remind"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/layout_user_profile_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ll_send_message"
+            android:layout_width="match_parent"
+            android:background="@color/trans_blue"
+            android:layout_height="48dp"
+            android:gravity="center" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send_message"
+                android:layout_marginRight="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/create_conversation"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/user_profile_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout_user_profile_bottom"
+        android:background="@color/bg_gray"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none">
+
+    </ListView>
+</RelativeLayout>

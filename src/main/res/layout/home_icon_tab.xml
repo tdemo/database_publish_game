@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    -->
+
+    <ImageView
+        android:id="@id/icon_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="64dp"
+        android:minHeight="64dp"/>
+
+    <TextView
+        android:id="@id/unread_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/icon_tab"
+        android:layout_alignTop="@id/icon_tab"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/unread_msg_front_bg"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_xsmall"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/unread_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/unread_num"
+        android:layout_alignTop="@id/unread_num"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/home_remind"
+        android:visibility="gone" />
+    <!-- </RelativeLayout> -->
+
+</merge>

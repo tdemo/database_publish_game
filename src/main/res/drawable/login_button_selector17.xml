@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <item android:drawable="@color/white_color"
+        android:state_pressed="false"/>
+    <item android:drawable="@color/clr_pressed17"
+        android:state_pressed="true"/>
+
+</selector>

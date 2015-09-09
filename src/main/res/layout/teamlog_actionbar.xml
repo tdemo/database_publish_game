@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/blue_color"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/teamlog_back_bt"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/singlecompetition_backbt_bg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="队伍日志"
+        android:textSize="9pt"
+        android:textColor="@color/white_color"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

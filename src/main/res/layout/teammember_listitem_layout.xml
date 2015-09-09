@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/teammem_listview_headbmp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/teammember_header"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/teammember_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大师兄"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/teammember_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="孙悟空是中国最著名的神话角色之一，出自四大古典名著之《西游记》。相传他由开天辟地以来的仙石孕育而生，因带领群猴进入水帘洞而成为众猴之王，号称为 “美猴王”。后来在西牛贺洲拜菩提祖师为师学艺，得名孙悟空，学会地煞七十二变、筋斗云等高超的法术。"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_gray"
+            android:layout_below="@id/teammember_name"/>
+    </RelativeLayout>
+
+</LinearLayout>

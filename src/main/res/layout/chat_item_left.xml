@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/underline1_gray"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <cn.sdu.online.findteam.resource.RoundImageView
+        android:id="@+id/img_userimgleft"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/otherteam_headtmp" />
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/img_userimgleft"
+        android:src="@drawable/chat_arrow_leftnum9" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/arrow_left"
+        android:layout_marginLeft="-19dp"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/tv_messageleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_rect_bg"
+            android:gravity="start"
+            android:padding="12dp"
+            android:text="hehehheheh"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>  

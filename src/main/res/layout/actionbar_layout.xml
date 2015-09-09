@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/blue_color">
+
+    <TextView
+        android:id="@+id/main_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门赛事"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="8pt"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/mian_action_search"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

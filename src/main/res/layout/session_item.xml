@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainlistview_item_bg"
+        android:padding="10dp">
+
+        <cn.sdu.online.findteam.aliwukong.imkit.widget.CustomGridView
+            android:id="@id/session_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="6dp"
+            android:contentDescription="null" />
+
+        <ImageView
+            android:id="@id/session_silence"
+            android:src="@drawable/silence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp" />
+
+        <TextView
+            android:id="@id/session_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@id/session_gmt"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="2sp"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@id/session_gmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/session_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:lineSpacingExtra="2sp"
+            android:text="刚刚"
+            android:textColor="@color/session_time"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@id/session_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/message_count_remind"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textScaleX="0.9"
+            android:textSize="@dimen/text_size_12"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/chatting_notsuccess_iv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@id/session_title"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="62dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@id/session_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/session_title"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/textcolor_gray"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/underline1_gray" />
+</LinearLayout>

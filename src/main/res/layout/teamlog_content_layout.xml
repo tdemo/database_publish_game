@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/underline1_gray"
+    android:orientation="vertical">
+
+    <cn.sdu.online.findteam.view.BounceScrollView
+        android:id="@+id/teamlog_scrollview"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:background="@color/underline1_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_color"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/teammember_header" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="大师兄"
+                            android:textColor="#000000"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2015年7月23日 11:19"
+                            android:textColor="@color/textcolor_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:focusable="true"
+                    android:paddingBottom="10dp"
+                    android:text="　1.谢谢你讨厌我，我还害怕你喜欢上我会伤了你自己呢。
+
+
+　　2.希望我是一个让你心动的人，而不是权衡取舍分析利弊后，觉得不错的人。
+
+　　3.我要的，不是你一时的温柔，而是你一生的守候。
+
+　　4.不要过分信赖别人，即便是你的影子，也会在黑暗中离开你。
+
+　　5.学习是我的正房，手机则是我的小妾，我往往在和正妻在一起时想着小妾，在陪着小妾时觉得对正房有愧。
+
+　　6.有人说我丑，我很难过，很心疼她，年纪轻轻就瞎了。
+
+　　7.与其做无归的途人，不如做个有梦的乘客。
+
+　　8.真正在乎一个人的时候，只要他对你冷淡一点，你的心就好像在流血。
+
+　　9.你成不了心态的主人，必然会沦为情绪的奴隶。
+
+　　10.一件事你犹豫去不去做，那就是该立即动身做的。一个东西你犹豫买不买，那就是该买的。　
+            11.生活不是电视剧，不可能怎么走都会碰到对的人。
+
+　　12.每个人的内心都不是坚强的，谁都不愿意去接受那些出乎意料的痛。
+
+　　13.离开我的都是路人，不管曾经有多在乎。
+
+　　14.大多数的人一辈子只做了三件事：自欺、欺人、被人欺。
+
+　　15.一位中国学生问科比：“请问您成功的秘诀是什么?”科比说：“你知道早晨四点的城市是什么样吗?”学生：“知道，一般那时候我还在写作业，怎么了?”科比：“没，没什么…”"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/discuss_item_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/underline1_gray"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <include layout="@layout/teamlog_content_discuss" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </cn.sdu.online.findteam.view.BounceScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <EditText
+            android:id="@+id/write_discuss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:hint="写评论"
+            android:textColorHint="@color/textcolor_gray"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/push_discuss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2.5"
+            android:background="#378afb"
+            android:text="发送"
+            android:textColor="@color/white_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

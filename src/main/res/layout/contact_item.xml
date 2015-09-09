@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:minHeight="60dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:background="@drawable/list_item_common_white_selector">
+
+        <CheckBox
+                android:id="@id/ck_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                style="@style/CheckBoxTheme"
+                android:visibility="gone"
+                android:clickable="false"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+
+        <ImageView
+                android:id="@id/iv_avatar"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/ck_checkbox"
+                android:gravity="center"
+                android:layout_width="@dimen/chatting_item_avatar_width"
+                android:layout_height="@dimen/chatting_item_avatar_width"/>
+
+        <TextView
+                android:id="@id/tv_nick"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:textSize="16sp"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+
+        <View
+                android:layout_toRightOf="@id/iv_avatar"
+                android:layout_alignParentBottom="true"
+                android:id="@id/divider_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_light_gray"/>
+</RelativeLayout>

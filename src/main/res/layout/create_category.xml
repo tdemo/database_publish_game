@@ -1,0 +1,172 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="分类名称"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="#818181" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:gravity="center"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="父级分类"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="#1f1f1f" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="50dp" />
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@android:drawable/spinner_dropdown_background"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="分类描述"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="12.5dp" />
+
+                <ImageButton
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="#1f1f1f" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="250dp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:background="@android:drawable/editbox_dropdown_light_frame"
+                android:gravity="center"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="父级分类"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:layout_width="2dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="#1f1f1f" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="50dp" />
+
+            <ImageButton
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/unread_icon_iv" />
+
+            <ImageButton
+                android:layout_width="97dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/write_finish_bt" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#cccccc" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:text="确认提交"
+            android:textColor="#509aff"
+            android:textSize="25dp" />
+    </LinearLayout>
+</ScrollView>

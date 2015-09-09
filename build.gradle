@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "cn.sdu.online.findteam"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    productFlavors {
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.ikimuhendis:ldrawer:0.1'
+    compile 'com.nineoldandroids:library:2.4.0+'
+    compile files('libs/badgeview.jar')
+    compile(name: 'wukongim_1.2.3', ext: 'aar')
+    compile(name: 'doraemon-multimedia-1.9.1', ext: 'aar')
+    provided 'com.squareup.dagger:dagger-compiler:1.2.2'
+    compile 'com.android.support:support-v4:22.0.0'
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'aars'
+    }
+}

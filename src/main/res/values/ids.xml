@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="session_list" type="id" />
+    <item name="view_pager" type="id" />
+    <item name="divider" type="id" />
+    <item name="layout_tabs" type="id" />
+    <item name="cursor" type="id" />
+    <item name="icon_tab" type="id" />
+    <item name="unread_num" type="id" />
+    <item name="unread_notice" type="id" />
+    <item name="tab_conversation" type="id" />
+    <item name="tab_contact" type="id" />
+    <item name="tab_extra" type="id" />
+    <item name="sessionFragment" type="id" />
+    <item name="session_icon" type="id" />
+    <item name="session_unread" type="id" />
+    <item name="session_notice" type="id" />
+    <item name="session_title" type="id" />
+    <item name="session_gmt" type="id" />
+    <item name="session_silence" type="id" />
+    <item name="session_content" type="id" />
+    <item name="list_empty" type="id" />
+    <item name="chat_list" type="id" />
+    <item name="chat_transmitter" type="id" />
+    <item name="chat_fragment" type="id" />
+    <item name="created_time" type="id" />
+    <item name="user_avatar" type="id" />
+    <item name="sender_name" type="id" />
+    <item name="content_stub_view" type="id" />
+    <item name="ll_send_state" type="id" />
+    <item name="image_retry" type="id" />
+    <item name="tv_overlay" type="id" />
+    <item name="sysmsg_overlay" type="id" />
+    <item name="chatting_time_tv" type="id" />
+    <item name="chatting_unreadcount_tv" type="id" />
+    <item name="chatting_content_tv" type="id" />
+    <item name="chatting_status_progress" type="id" />
+    <item name="chatting_notsuccess_iv" type="id" />
+    <item name="chatting_unread_icon" type="id" />
+    <item name="chatting_sysmsg_tv" type="id" />
+
+    <!-- 主页面 -->
+    <item name="root_view" type="id"/>
+    <item name="header" type="id"/>
+    <item name="actionbar_icon" type="id"/>
+    <item name="indicator" type="id"/>
+
+    <!-- 聊天明细页面 -->
+    <item type="id" name="view_place_holder" />
+    <item type="id" name="voice_play_view" />
+    <item type="id" name="chatting_content_ll" />
+    <item type="id" name="chatting_content_image" />
+    <item type="id" name="chatting_avatar" />
+    <item type="id" name="chatting_content_link" />
+    <item type="id" name="chatting_content_tv_link_title" />
+    <item type="id" name="chatting_content_tv_link_tips" />
+    <item type="id" name="chatting_content_link_img" />
+    <item type="id" name="chatting_sendtime_tv" />
+    <item type="id" name="chatting_item_username" />
+    <item type="id" name="chatting_title" />
+    <item type="id" name="chatting_label" />
+    <item type="id" name="layoutDingContent" />
+    <item name="rl_input" type="id" />
+    <item name="load_camera" type="id" />
+    <item name="et_sendmessage" type="id" />
+    <item name="img_voice_input" type="id"/>
+    <item name="btn_send" type="id"/>
+    <item name="chatting_unread_icon_iv" type="id"/>
+
+    <!--联系人页面-->
+    <item name="contact_list" type="id"/>
+    <item name="tv_nick" type="id"/>
+    <item name="iv_avatar" type="id"/>
+    <item name="ck_checkbox" type="id"/>
+    <item name="divider_line" type="id"/>
+    <item name="newchat_fragment" type="id"/>
+    <item name="btn_ok" type="id"/>
+
+    <!--录音-->
+    <item type="id" name="rl_content"/>
+    <item type="id" name="btn_play_pause"/>
+    <item type="id" name="tv_audio_length"/>
+
+    <item type="id" name="adapter_view_tag_key"/>
+    <item name="quit_btn" type="id" />
+    <item name="session_fragment" type="id" />
+</resources>

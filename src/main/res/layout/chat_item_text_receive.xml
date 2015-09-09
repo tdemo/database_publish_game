@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 接收到的文本消息的显示 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <!-- 分组用的时间组件 -->
+    <include layout="@layout/chatting_item_split_view" />
+
+    <RelativeLayout
+        style="@style/ChattingUIFromContainer"
+        android:orientation="vertical"
+        android:longClickable="false">
+
+        <!-- 此元素的宽度与头像一直，此处主要用于位置的定位 -->
+
+        <View
+            android:id="@id/view_place_holder"
+            android:layout_width="@dimen/chatting_item_avatar_width"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/chatting_item_avatar_marginRight"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@id/chatting_avatar"
+            style="@style/ChattingUIFromAvatar"
+            android:layout_alignLeft="@id/view_place_holder"
+            android:layout_alignBottom="@id/chatting_content_tv" />
+
+        <TextView
+            android:id="@id/chatting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/chatting_avatar"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/chat_msg_title"
+            android:includeFontPadding="false"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@id/chatting_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/view_place_holder"
+            android:layout_below="@id/chatting_title"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/chat_receive_bg"
+            android:gravity="left|center"
+            android:autoLink="web|phone"
+            android:minHeight="40dp"
+            android:textColor="@color/chat_text_color"
+            android:textColorLink="@color/chat_link_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/transparent"/>
+</LinearLayout>

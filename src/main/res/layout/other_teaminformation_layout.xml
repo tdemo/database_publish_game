@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="“南航E行”团队是一支充满激情、踏实肯干、有着创新精神的团队。这个队名也很朴实，我们赋予了她深深的感情。南航是我们的母校，是授以我们知识的地方，也是莘莘学子寻梦的地方。e行是我们参赛的态度，也是我们做人做事的信念。相信只要我们不放弃，不抛弃，走到最后我们还是e路通行。"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"/>
+</LinearLayout>

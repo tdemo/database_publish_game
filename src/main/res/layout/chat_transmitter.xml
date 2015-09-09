@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:minHeight="@dimen/chatting_input_operation_icon_width"
+    android:orientation="horizontal"
+    android:background="@color/blue_color">
+
+    <ImageView
+        android:id="@+id/load_camera"
+        android:layout_width="@dimen/chatting_input_operation_icon_width"
+        android:layout_height="@dimen/chatting_input_operation_icon_height"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_camera" />
+
+    <EditText
+        android:id="@+id/et_sendmessage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="false"
+        android:gravity="left|bottom"
+        android:hint="消息"
+        android:maxHeight="105dp"
+        android:maxLines="3"
+        android:minHeight="35dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="#222222"
+        android:textCursorDrawable="@drawable/edt_cursor_drawable"
+        android:textSize="@dimen/text_size_16" />
+
+
+    <ImageView
+        android:id="@+id/btn_face"
+        android:layout_width="@dimen/chatting_input_face_icon_width"
+        android:layout_height="@dimen/chatting_input_face_icon_width"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@id/img_voice_input"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/ib_face"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/img_voice_input"
+        android:layout_width="@dimen/chatting_input_operation_icon_width"
+        android:layout_height="@dimen/chatting_input_operation_icon_height"
+        android:layout_alignBottom="@+id/et_sendmessage"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/btn_voice" />
+
+
+    <TextView
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="@dimen/chatting_input_panel_margin"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:text="@string/chat_input_button_send"
+        android:background="#378afb"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone" />
+</LinearLayout>

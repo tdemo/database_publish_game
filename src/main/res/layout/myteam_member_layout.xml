@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/teammem_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"/>
+
+    <Button
+        android:id="@+id/invite_new_member"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="45dp"
+        android:background="@drawable/simplecompetition_button_bg"
+        android:text="邀请新成员"
+        android:textColor="@color/singlecompetiton_buttontext_bg"
+        android:textSize="20sp"/>
+</RelativeLayout>

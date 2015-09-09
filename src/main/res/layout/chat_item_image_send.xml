@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 分组用的时间组件 -->
+    <include layout="@layout/chatting_item_split_view" />
+
+    <RelativeLayout
+        style="@style/ChattingUIToContainer"
+        android:longClickable="false"
+        android:orientation="vertical">
+
+        <cn.sdu.online.findteam.aliwukong.imkit.widget.MakeupImageView xmlns:image="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chatting_content_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chatting_title"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/Sendchatting_avatar"
+            android:adjustViewBounds="true"
+            android:background="@drawable/chat_send_bg"
+            android:gravity="left|center"
+            android:longClickable="true"
+            android:maxHeight="225dp"
+            android:maxWidth="225dp"
+            android:minHeight="75dp"
+            android:minWidth="75dp"
+            android:textColorLink="@color/chat_link_color"
+            image:makeupDirection="right"
+            image:makeupHeight="@dimen/chatting_item_picture_makeup_height" />
+        <!--android:layout_toRightOf="@id/view_place_holder"-->
+
+        <ImageView
+            android:id="@+id/Sendchatting_avatar"
+            style="@style/SendChattingUIFromAvatar"
+            android:layout_alignBottom="@id/chatting_content_v"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp" />
+
+        <TextView
+            android:id="@+id/chatting_unreadcount_tv"
+            style="@style/ChattingUIUnreadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/chatting_content_tv"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/chatting_content_v"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:minHeight="50dp"
+            android:padding="0dp" />
+
+        <ImageView
+            android:id="@+id/chatting_unread_icon_iv"
+            style="@style/ChattingUnReadIcon"
+            android:layout_above="@id/chatting_unreadcount_tv"
+            android:layout_alignRight="@id/chatting_unreadcount_tv"
+            android:layout_marginBottom="4dp"
+            android:layout_toLeftOf="@id/chatting_content_tv" />
+
+        <include
+            layout="@layout/chatting_item_to_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/chatting_content_v" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/transparent"/>
+</LinearLayout>

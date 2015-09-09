@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mymessage_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue_color"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/mymessage_searchtext"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_search_shape"
+            android:gravity="center"
+            android:hint="@string/search"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/mymessage_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_weight="2.5"
+            android:background="@color/blue_color"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="#ffffff"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <include layout="@layout/mymessage_tab" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@id/view_pager"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginTop="38dp"/>-->
+
+    <!--<com.alibaba.wukong.demo.imkit.widget.indicator.PagerSlidingTabStrip-->
+    <!--android:id="@id/indicator"-->
+    <!--app:pstsShouldExpand="true"-->
+    <!--app:pstsIndicatorHeight="3dp"-->
+    <!--app:pstsUnderlineHeight="0dp"-->
+    <!--app:pstsTabPaddingLeftRight="0dp"-->
+    <!--app:pstsDividerWidth="0dp"-->
+    <!--app:pstsUnderlineColor="@color/gray"-->
+    <!--app:pstsIndicatorColor="@color/pure_white"-->
+    <!--android:background="@drawable/actionbar_bg"-->
+    <!--android:layout_below="@id/header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"/>-->

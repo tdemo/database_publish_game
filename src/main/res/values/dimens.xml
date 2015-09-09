@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ldrawer_drawableSize">50dp</dimen>
+    <dimen name="ldrawer_barSize">18dp</dimen>
+    <dimen name="ldrawer_topBottomBarArrowSize">11dp</dimen>
+    <dimen name="ldrawer_thickness">2dp</dimen>
+    <dimen name="ldrawer_gapBetweenBars">3dp</dimen>
+    <dimen name="ldrawer_middleBarArrowSize">16dp</dimen>
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="size16">16sp</dimen>
+    <dimen name="textsize">20dp</dimen>
+    <dimen name="height">25dp</dimen>
+    <dimen name="width">40dp</dimen>
+    <dimen name="interval">2dp</dimen>
+    <dimen name="height2">50dp</dimen>
+    <dimen name="draw_button_h">90dp</dimen>
+
+
+
+    <dimen name="radius_default">3dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="margin_default">5dp</dimen>
+    <dimen name="line_default">1dp</dimen>
+
+    <!-- Products -->
+    <dimen name="height_list">50dp</dimen>
+    <dimen name="size_list_image">40dp</dimen>
+    <dimen name="font_size_title">17sp</dimen>
+    <dimen name="font_size_description">15sp</dimen>
+
+    <dimen name="margin_setting">20dp</dimen>
+
+    <dimen name="font_size_new_tag">11sp</dimen>
+    <dimen name="padding_new_tag">3dp</dimen>
+
+
+    <!--阿里悟空相关-->
+    <!-- common values -->
+    <dimen name="common_navigator_divider_height">1dp</dimen>
+    <dimen name="common_navigator_height">48dp</dimen>
+    <dimen name="common_actionbar_height">48dp</dimen>
+
+    <dimen name="text_size_xsmall">10sp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="text_size_small_avatar">12dp</dimen>
+    <dimen name="text_size_8">8dp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+    <dimen name="text_size_xmedium">18sp</dimen>
+
+    <dimen name="chatting_item_time_divider_height">8dp</dimen>
+    <dimen name="chatting_item_avatar_width">40dp</dimen>
+    <dimen name="chatting_item_avatar_height">40dp</dimen>
+    <dimen name="chatting_item_avatar_marginRight">5dp</dimen>
+    <dimen name="chatting_item_picture_makeup_height">16dp</dimen>
+    <dimen name="chatting_item_padding_bs">8dp</dimen>
+    <dimen name="chatting_txt_avatar_radius">20dp</dimen>
+    <dimen name="chatting_input_panel_margin">8dp</dimen>
+    <dimen name="chatting_input_panel_height">48dp</dimen>
+    <dimen name="chatting_input_operation_icon_width">48dp</dimen>
+    <dimen name="chatting_input_operation_icon_height">48dp</dimen>
+    <dimen name="chatting_input_face_icon_width">43dp</dimen>
+    <dimen name="chatting_input_face_icon_height">43dp</dimen>
+
+    <dimen name="contact_item_avatar_width">36dp</dimen>
+    <dimen name="contact_item_avatar_height">36dp</dimen>
+</resources>

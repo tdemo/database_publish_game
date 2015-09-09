@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal|bottom"
+    android:background="@drawable/starting_bg"
+    android:paddingBottom="70dp">
+
+    <Button
+        android:id="@+id/start_login_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        android:textSize="18sp"
+        android:textColor="@color/white_color"
+        android:background="@drawable/register"
+        android:layout_marginRight="25dp"/>
+
+    <Button
+        android:id="@+id/start_seearound_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="随便逛逛"
+        android:textColor="@color/underline1_gray"
+        android:textSize="18sp"
+        android:background="@drawable/register"/>
+
+</LinearLayout>

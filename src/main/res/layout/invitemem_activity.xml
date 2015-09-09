@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/invitemem_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/blue_color"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/invitemem_searchtext"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_search_shape"
+                android:gravity="center"
+                android:hint="@string/search"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/invitemem_search_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_weight="2.5"
+                android:background="@color/blue_color"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:text="@string/search"
+                android:textColor="#ffffff"
+                android:textSize="10pt" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/invite_activity_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/invite_finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/simplecompetition_button_bg"
+        android:text="完成(0)"
+        android:textColor="@color/singlecompetiton_buttontext_bg" />
+</RelativeLayout>

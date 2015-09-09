@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingRight="8dp" >
+
+    <ProgressBar
+        android:id="@id/chatting_status_progress"
+        style="@android:style/Widget.ProgressBar.Small.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/chatting_notsuccess_iv"
+        style="@style/ChattingUISendFail"
+        android:visibility="gone" />
+
+</LinearLayout>
